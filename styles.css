@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 20px;
+}
+
+#search {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.todo-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.todo-input input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.todo-input button {
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo-input button:hover {
+    background: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.done {
+    background: #d4edda;
+    color: #155724;
+}
+
+li.undone {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+li button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #007bff;
+    margin-left: 10px;
+}
+
+li button:hover {
+    color: #0056b3;
+}
+
+.clear-btn {
+    background: #dc3545;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.clear-btn:hover {
+    background: #c82333;
+}
+
+.timestamps {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        width: 90%;
+    }
+    
+    .todo-input input {
+        width: 60%;
+    }
+    
+    .todo-input button {
+        padding: 10px;
+    }
+}
